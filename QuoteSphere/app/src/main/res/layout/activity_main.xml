@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@color/background_color">
+
+    <!-- App Header -->
+
+    <TextView
+        android:id="@+id/tvAppTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_text"
+        android:gravity="center"
+        android:layout_marginBottom="6dp"/>
+
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_subtitle"
+        android:textSize="15sp"
+        android:textColor="@color/secondary_text"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Quote Card -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/quoteCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@color/card_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="32dp">
+
+            <TextView
+                android:id="@+id/tvQuoteIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="“"
+                android:textSize="54sp"
+                android:textStyle="bold"
+                android:textColor="@color/accent_color"
+                android:gravity="center"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/tvQuote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Knowledge is power."
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_text"
+                android:gravity="center"
+                android:lineSpacingExtra="5dp"
+                android:layout_marginBottom="24dp"/>
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="3dp"
+                android:background="@color/accent_color"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:id="@+id/tvAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="— Francis Bacon"
+                android:textSize="17sp"
+                android:textStyle="italic"
+                android:textColor="@color/secondary_text"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- New Quote Button -->
+
+    <Button
+        android:id="@+id/btnNewQuote"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:text="@string/new_quote"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="@color/button_text"
+        android:backgroundTint="@color/accent_color"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <!-- Footer -->
+
+    <TextView
+        android:id="@+id/tvFooter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/footer_text"
+        android:textSize="13sp"
+        android:textColor="@color/secondary_text"
+        android:gravity="center"
+        android:layout_marginTop="24dp"/>
+
+</LinearLayout>

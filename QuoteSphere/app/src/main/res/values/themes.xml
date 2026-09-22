@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style
+        name="Theme.QuoteSphere"
+        parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="android:fontFamily">sans</item>
+
+        <item name="android:windowLightStatusBar">true</item>
+
+        <item name="android:statusBarColor">
+            @color/background_color
+        </item>
+
+        <item name="android:navigationBarColor">
+            @color/background_color
+        </item>
+
+        <item name="android:windowActionModeOverlay">true</item>
+
+    </style>
+
+</resources>
